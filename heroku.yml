@@ -3,3 +3,8 @@ build:
     web: Dockerfile
 run:
   web: bin/www
+
+release:
+  image: web
+  command:
+    - node node public/javascripts/release-test.js
