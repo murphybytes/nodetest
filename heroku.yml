@@ -7,4 +7,4 @@ run:
 release:
   image: web
   command:
-    - node node public/javascripts/release-test.js
+    - node public/javascripts/release-test.js
