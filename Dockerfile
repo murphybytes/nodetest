@@ -8,6 +8,6 @@ COPY ./public /app/public
 COPY ./routes /app/routes
 COPY ./views /app/views
 COPY ./app.js /app/
-RUN apk add curl
+RUN apk add --update curl
 # This installs the dependencies declared in package.json. @pe-connect is not included in this.
 RUN npm install --production
